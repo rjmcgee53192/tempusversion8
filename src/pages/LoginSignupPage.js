@@ -29,7 +29,7 @@ const LoginSignupPage = () => {
         e.preventDefault();
         try {
             await authService.register(userDetails);
-            navigate('/my-tempus-dashboard'); // Redirect to dashboard after successful registration
+            navigate('/dashboard'); // Redirect to dashboard after successful registration
         } catch (error) {
             console.error("Registration error:", error.response?.data?.message || "An error occurred");
             setError('Registration failed. Please try again.'); // Update error state with more specific error if possible
@@ -40,7 +40,7 @@ const LoginSignupPage = () => {
         e.preventDefault();
         try {
             await authService.login({ email: userDetails.email, password: userDetails.password });
-            navigate('/my-tempus-dashboard'); // Redirect to dashboard after successful login
+            navigate('/dashboard'); // Redirect to dashboard after successful login
         } catch (error) {
             console.error("Login error:", error.response?.data?.message || "An error occurred");
             setError('Login failed. Please try again.'); // Update error state with more specific error if possible
