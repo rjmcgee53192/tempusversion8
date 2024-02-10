@@ -1,46 +1,35 @@
 import React from 'react';
-import '../assets/css/TempusStyles.css'; // Adjust the path as necessary
+import Navbar from '../components/Navbar'; // Ensure this path is correct
+import '../assets/css/TempusStyles.css'; // Make sure this path correctly points to your CSS file
 
 const PricingPage = () => {
     return (
         <>
-            <header className="header">
-                <div className="container header-container">
-                    <div className="logo-container">
-                        <img src="/assets/img/TempusIcon.png" alt="Logo Icon" className="logo" />
-                        <img src="/assets/img/TempusName.png" alt="Logo Name" className="logo-name" />
-                    </div>
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul className="navbar-nav ml-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Features & Demo</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Resources
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a className="dropdown-item" href="#">About & Contact Us</a>
-                                    </div>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Login | Signup</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            {/* Main content here */}
+            <Navbar />
             <main className="py-5">
-                {/* Content similar to the provided HTML */}
+                <div className="container">
+                    {/* Main content for PricingPage */}
+                    <h1>Pricing Plans</h1>
+                    <p>Choose the plan that works best for you.</p>
+                    {/* Example pricing plan section */}
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Basic</h5>
+                                    <p className="card-text">Great for individuals just starting out.</p>
+                                    <ul>
+                                        <li>Feature 1</li>
+                                        <li>Feature 2</li>
+                                        <li>Feature 3</li>
+                                    </ul>
+                                    <a href="#" className="btn btn-primary">Sign Up</a>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Repeat for other plans */}
+                    </div>
+                </div>
             </main>
             <footer>
                 <div className="container">

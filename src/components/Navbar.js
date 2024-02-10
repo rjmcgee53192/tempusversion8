@@ -11,9 +11,10 @@ const Navbar = () => {
     <header className="header">
       <div className="container header-container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          {/* Tempus Icon as link to home */}
           <Link to="/" className="navbar-brand logo-container">
             <img src={tempusIcon} alt="Logo Icon" className="logo" />
-            {/* "Tempus" name that disappears on mobile */}
+            {/* Tempus text name for large screens, hidden on mobile */}
             <span className="navbar-text logo-name d-none d-lg-inline">Tempus</span>
           </Link>
           <button className="navbar-toggler" type="button" onClick={handleNavCollapse} aria-controls="navbarNavDropdown" aria-expanded={!isNavCollapsed} aria-label="Toggle navigation">
@@ -21,9 +22,7 @@ const Navbar = () => {
           </button>
           <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNavDropdown">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
-              </li>
+              {/* Removed the Home nav item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/pricing">Pricing</Link>
               </li>

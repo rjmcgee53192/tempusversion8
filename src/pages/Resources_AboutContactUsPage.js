@@ -1,44 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar'; // Ensure this path is correct
 import '../assets/css/TempusStyles.css'; // Adjust the path as necessary
 
 const ResourcesAboutContactUsPage = () => {
   return (
     <>
-      <header className="header">
-        <div className="container header-container">
-          <div className="logo-container">
-            <img src="/assets/img/TempusIcon.png" alt="Logo Icon" className="logo" />
-            <img src="/assets/img/TempusName.png" alt="Logo Name" className="logo-name" />
-          </div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul className="navbar-nav ml-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Features & Demo</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Resources
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a className="dropdown-item" href="#">About & Contact Us</a>
-                                    </div>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Login | Signup</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-        </div>
-      </header>
-
+      <Navbar />
       <main className="container">
         <div className="row justify-content-md-center my-4">
           <div className="col-md-6">
@@ -61,7 +28,7 @@ const ResourcesAboutContactUsPage = () => {
             <p>I bring a diverse range of technical skills to the table, including expertise in HTML, CSS, JavaScript, and Node.js development. With a strong foundation in both front-end and back-end technologies, I excel in creating user-friendly interfaces and integrating powerful APIs. My proficiency extends to platforms like HubSpot, Zoho, Monday, and GoHighLevel, enabling effective customer relationship management, marketing automation, digital adoption, and software quality assurance & testing. Currently seeking a role within a tech/software company's systems implementation/on-boarding/digital adoption program, or development departments, I am driven to leverage my skills to create innovative solutions and contribute to the dynamic world of technology.</p>
           </div>
           <div className="col-md-6">
-            {/* Ryan McGee's Column */}
+            {/* Partner's Column */}
             <img src="/assets/img/partner.jpg" alt="Partner Name" className="img-fluid" />
             <h3>Ryan McGee</h3>
             {/* Icons for GitHub, LinkedIn, Email omitted for brevity */}
