@@ -13,7 +13,7 @@ const ResourcesAboutContactUsPage = () => {
         <div className="row justify-content-md-center my-4">
           <div className="col-md-6">
             <h1 className="display-4 text-center">SWD Final Project - Tempus</h1>
-            <h5 className="mt-3">Here, you will provide information about the collaboration and the project, detailing the objectives, challenges faced, and the solutions you developed.</h5>
+            <h5 className="mt-3">The SWD Final Project which we named the application Tempus was a collaboration between Ryan McGee and Mitchell Brusseau. The goal or rather the objective was to build a calendar application that also had booking/scheduling capabilities. We faced many challenges with opensource technologies and working through obsitcales with our code but ultimately we endevoured learning from the failure in order to mover forward. A tour of our code and application is found on the Features & Demo Page. </h5>
           </div>
         </div>
         <div className="row">
