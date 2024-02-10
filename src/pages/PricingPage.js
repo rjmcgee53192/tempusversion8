@@ -1,5 +1,5 @@
 import React from 'react';
-import '/client/assets/css/TempusStyles.css'; // Adjust the path as necessary
+import '../assets/css/TempusStyles.css'; // Adjust the path as necessary
 
 const PricingPage = () => {
     return (
