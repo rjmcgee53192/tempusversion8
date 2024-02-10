@@ -109,3 +109,47 @@ body {
 /* Continue combining and adjusting CSS from both files... */
 
 /* Ensure to adapt classes and IDs from the second HTML if needed */
+/* Main content padding */
+main {
+    padding: 40px 0; /* Increased padding */
+  }
+  
+  /* Footer adjustments */
+  footer {
+    position: relative; /* Un-anchored from the screen */
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+  }
+  
+  /* Header and Navbar adjustments */
+  header, .navbar {
+    background-color: transparent; /* Make the header transparent or match site's background */
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root { /* Assuming you are using create-react-app which uses 'root' */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1; /* This will make the main content grow to fill the space */
+  }
+  
+  footer {
+    background-color: #333; /* Dark gray color */
+    color: #fff; /* Text color */
+    width: 100%;
+  }
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+
+      
+     
