@@ -1,27 +1,27 @@
 import React from 'react';
-import UserNavbar from './UserNavbar'; // Assuming UserNavbar is in the same directory
-import './MyTempusDashboardPage.css'; // Path to your new CSS file for this page
+import UserNavbar from '../components/UserNavbar'; // Adjust the import path as necessary
+import tempusIcon from '../assets/imgs/TempusIcon.png'; // Adjust the import path as necessary
+import '../assets/css/MyTempusDashboardPage.css'; // Adjust the import path as necessary
 
 const MyTempusDashboardPage = () => {
   return (
     <>
       <UserNavbar />
       <div id="main" className="container-fluid">
-        {/* Main Content */}
+        <div className="header">
+          <img id="header-image" src={tempusIcon} alt="Tempus Logo" />
+        </div>
+        {/* The rest of your main content */}
         <div className="row">
           <div className="col-10">
-            {/* Calendar Widgets */}
-            {/* ... */}
+            {/* Calendar and other widgets */}
           </div>
         </div>
-        {/* Footer */}
-        <div className="row">
+        <footer>
           <div className="col-12 col-md-10 offset-md-2">
-            <footer>
-              &copy; 2024 Tempus. All rights reserved.
-            </footer>
+            &copy; 2024 Tempus. All rights reserved.
           </div>
-        </div>
+        </footer>
       </div>
     </>
   );

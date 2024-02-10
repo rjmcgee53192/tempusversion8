@@ -41,6 +41,15 @@ const FeaturesDemoPage = () => {
               </div>
             ))}
           </div>
+          <div className="row">
+            {/* Feature Blocks */}
+            {["Meeting Polls", "Round-robin", "Lead Capture"].map((feature, index) => (
+              <div className="col-md-4 my-3" key={index}>
+                <h3>{feature}</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget!</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Additional Section */}
