@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar'; // Ensure this path is correct
 import '../assets/css/TempusStyles.css'; // Adjust the path as necessary
+import mitchellBrusseauImage from '../assets/imgs/MitchellBrusseau.jpg'; // Import Mitchell Brusseau's image
+// Placeholder import for the project partner's image - replace 'partnerImage.jpg' with actual filename
+import partnerImage from '../assets/imgs/partnerImage.jpg';
 
 const ResourcesAboutContactUsPage = () => {
   return (
@@ -16,7 +19,7 @@ const ResourcesAboutContactUsPage = () => {
         <div className="row">
           <div className="col-md-6">
             {/* Mitchell Brusseau's Column */}
-            <img src="/assets/img/MitchellBrusseau.jpg" alt="Mitchell Brusseau" className="img-fluid" />
+            <img src={mitchellBrusseauImage} alt="Mitchell Brusseau" className="img-fluid" />
             <h3>Mitchell Brusseau</h3>
             {/* Icons for GitHub, LinkedIn, Email omitted for brevity */}
             <ul>
@@ -29,7 +32,7 @@ const ResourcesAboutContactUsPage = () => {
           </div>
           <div className="col-md-6">
             {/* Partner's Column */}
-            <img src="/assets/img/partner.jpg" alt="Partner Name" className="img-fluid" />
+            <img src={partnerImage} alt="Partner Name" className="img-fluid" /> {/* Update alt text and src as necessary */}
             <h3>Ryan McGee</h3>
             {/* Icons for GitHub, LinkedIn, Email omitted for brevity */}
             <ul>
