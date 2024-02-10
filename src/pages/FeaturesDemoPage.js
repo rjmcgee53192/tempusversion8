@@ -11,15 +11,14 @@ const FeaturesDemoPage = () => {
         <div className="container my-4">
           <div className="row">
             <div className="col-12">
-              {/* Replace `src` with your actual video link */}
               <iframe 
-                width="100%" 
-                height="500" 
-                src="your-video-link" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/_ITiwPMUzho?si=JfZSSanvFt6sFhoP" 
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen
-                title="Feature Demo Video"
+                title="YouTube video player"
               ></iframe>
             </div>
           </div>
@@ -34,7 +33,7 @@ const FeaturesDemoPage = () => {
             </div>
           </div>
           <div className="row">
-            {/* Feature Blocks (assuming 3 features based on the provided image) */}
+            {/* Feature Blocks */}
             {["Voicemail Drop", "Email", "Text Messages"].map((feature, index) => (
               <div className="col-md-4 my-3" key={index}>
                 <h3>{feature}</h3>
