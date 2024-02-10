@@ -1,0 +1,111 @@
+/* Adjusted CSS for dual logos in the header */
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo, .logo-name {
+    max-height: 250px; /* Adjust based on your logo sizes */
+    margin-right: 10px; /* Space between logos */
+}
+
+/* Navigation styles adjusted for new header layout */
+.navbar {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+/* Continue with previous combined styles... */
+
+.footer, footer {
+    background-color: #f5f5f5;
+    color: #151515;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+@media (max-width: 768px) {
+    .header-container, .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer, footer {
+        position: static;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+    }
+}
+
+/* Ensure the rest of your CSS is included */
+
+
+
+/* Incorporate all styles from both CSS files, resolving any conflicts. */
+/* Example combination, ensure to check and adjust based on final HTML structure. */
+
+.header {
+    margin-bottom: 20px;
+}
+
+.footer, footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+    color: #fff; /* From the second footer */
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .footer, footer {
+        position: static;
+    }
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Continue combining and adjusting CSS from both files... */
+
+/* Ensure to adapt classes and IDs from the second HTML if needed */
