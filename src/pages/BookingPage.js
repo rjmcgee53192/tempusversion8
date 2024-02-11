@@ -50,7 +50,7 @@ const BookingPage = () => {
     };
 
     try {
-      const response = await axios.post('/api/bookings', bookingSubmission);
+      await axios.post('/api/bookings', bookingSubmission);
       navigate('/dashboard'); // Navigate to dashboard after successful booking
     } catch (error) {
       setError(error.response?.data?.message || "Error occurred while booking the event.");
