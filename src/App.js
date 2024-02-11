@@ -8,7 +8,10 @@ import FeaturesDemoPage from './pages/FeaturesDemoPage';
 import ResourcesAboutContactUsPage from './pages/Resources_AboutContactUsPage'; // Adjust the name if needed
 import LoginSignupPage from './pages/LoginSignupPage';
 import MyTempusDashboardPage from './pages/MyTempusDashboardPage'; // Import your page component
+import BookingPage from './pages/BookingPage'; // Import your BookingPage component
+
 import './App.css';
+
 // ... any other page imports you may have
 
 const App = () => {
@@ -21,6 +24,7 @@ const App = () => {
         <Route path="/about-contact-us" element={<ResourcesAboutContactUsPage />} />
         <Route path="/login-signup" element={<LoginSignupPage />} />
         <Route path="/dashboard" element={<MyTempusDashboardPage />} />
+        <Route path="/book-appointment" element={<BookingPage />} />
         {/* Add additional routes as needed */}
       </Routes>
     </Router>
