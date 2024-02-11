@@ -33,7 +33,7 @@ const UserNavbar = () => {
       <div className="header">
         <span className="menu-icon" onClick={openNav}>&#9776;</span>
         {/* Assuming TempusLogo.png is correctly located and accessible at the given path */}
-        <img id="header-image" src="/TempusIMAGES/TempusLogo.png" alt="Tempus Logo" style={{cursor: 'pointer'}} onClick={() => navigate('/dashboard')} />
+        <img id="header-image" src="../assets/imgs/TempusIcon.png" alt="Tempus Logo" style={{cursor: 'pointer'}} onClick={() => navigate('/dashboard')} />
       </div>
     </div>
   );
